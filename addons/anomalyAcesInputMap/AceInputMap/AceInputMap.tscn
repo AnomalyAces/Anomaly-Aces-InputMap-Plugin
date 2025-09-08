@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://b0mx4s8epj5x6"]
+
+[ext_resource type="Script" uid="uid://buy7kfocw05xw" path="res://addons/anomalyAcesInputMap/AceInputMap/ace_input_map.gd" id="1_hvnku"]
+
+[node name="AceInputMap" type="Node"]
+script = ExtResource("1_hvnku")
+input_mode = null
+toggle_camera_mode_input = null
