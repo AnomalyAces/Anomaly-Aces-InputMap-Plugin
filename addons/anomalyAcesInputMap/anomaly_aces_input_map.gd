@@ -12,7 +12,7 @@ func _enter_tree() -> void:
 		preload("res://addons/anomalyAcesInputMap/AceInputMap/AceInputMap.svg")
 	)
 
-	print("AceInputMap Entering Tree")
+	AceLog.printLog(["AceInputMap Entering Tree"])
 
 
 func _exit_tree() -> void:

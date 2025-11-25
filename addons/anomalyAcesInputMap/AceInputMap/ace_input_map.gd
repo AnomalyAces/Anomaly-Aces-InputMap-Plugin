@@ -66,12 +66,12 @@ func _ready() -> void:
 	if Engine.is_editor_hint():
 		var custom_inputs: Array[String] = []
 		custom_inputs.assign([north_input, east_input, south_input, west_input].filter(func(input: String): return !input.is_empty()))
-		print("Adding Temp Actions to Editor InputMap to quiet errors")
-		print("=========Project Settings===========")
+		AceLog.printLog(["Adding Temp Actions to Editor InputMap to quiet errors"])
+		AceLog.printLog(["=========Project Settings==========="])
 		for input in custom_inputs:
-			print("Adding %s" % input)
+			AceLog.printLog(["Adding %s" % input])
 			InputMap.add_action(input)
-		print("====================================")
+		AceLog.printLog(["===================================="])
 
 
 func get_input_vector() -> Vector2:
